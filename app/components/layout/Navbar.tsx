@@ -35,7 +35,7 @@ const Navbar = () => {
         },
     ]
     return (
-        <nav className='min-h-[70px] bg-background pt-[15px] pb-[16px]'>
+        <nav className='min-h-[70px] bg-background pt-[15px] pb-[16px] fixed w-full z-10 '>
             <div className='custom-container flex items-center justify-between'>
                 <div className="flex items-center gap-[38px]">
                     <Link className="w-[41px] h-[38.45px] overflow-hidden relative inline-block shrink-0" href='/'>
