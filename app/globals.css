@@ -1,15 +1,77 @@
 @import "tailwindcss";
+@import "tailwindcss";
 
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+}
 :root {
+  /* ===== Colors ===== */
+  --color-primary: #0154AA;
+  --color-secondary: #737A91;
+  --color-company-icon: #FAFAFA;
+  --color-white: #FFFFFF;
+  --color-dark: #333333;
+  --color-gray-dark: #585D6E;
+  --color-gray-mid: #E9ECEF;
+  --color-gray-mid-dark: #E1E1E1;
+  --color-gray-light: #F4F4F4;
+  --color-blue-light: #F6F9FF;
+
+  /* ===== Font Sizes ===== */
+  --font-10: 10px;
+  --font-12: 12px;
+  --font-14: 14px;
+  --font-16: 16px;
+  --font-18: 18px;
+  --font-22: 22px;
+
+  /* ===== Existing ===== */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #F4F4F4;
 }
 
 @theme inline {
+  /* Background & Foreground */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* Custom Fonts */
+  --font-nhdm: var(--font-nhdm-600);
+  --font-nhdr: var(--font-nhdr-500);
+
+  /* Color Utilities */
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-company-icon: var(--color-company-icon);
+  --color-white: var(--color-white);
+  --color-dark: var(--color-dark);
+  --color-gray-dark: var(--color-gray-dark);
+  --color-gray-mid: var(--color-gray-mid);
+  --color-gray-mid-dark: var(--color-gray-mid-dark);
+  --color-gray-light: var(--color-gray-light);
+  --color-blue-light: var(--color-blue-light);
+
+  /* Font Size Utilities */
+  --text-10: var(--font-10);
+  --text-12: var(--font-12);
+  --text-14: var(--font-14);
+  --text-16: var(--font-16);
+  --text-18: var(--font-18);
+  --text-22: var(--font-22);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +81,16 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+
+
+
+.custom-container {
+  max-width: 1344px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.theme-button {
+  background-color: var(--color-primary);
 }
