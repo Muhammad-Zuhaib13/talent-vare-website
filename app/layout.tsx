@@ -26,7 +26,7 @@ const NeueHaasDisplayRoman = localFont({
 
 export const metadata: Metadata = {
   title: "TalentVare",
-  description: "Talent Vare Website",
+  description: "A modern portal homepage built with Next.js and Tailwind CSS. This project implements a pixel-perfect UI design for TalentVare.",
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
