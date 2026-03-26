@@ -463,7 +463,7 @@ const FindJobContainer = () => {
         <div className='flex flex-col gap-[5px]'>
           <h1 className='text-22 text-dark font-nhdm'>Find your Dream Job, <span className='text-primary'>Albert!</span></h1>
           <p className='text-14 text-gray-dark font-nhdr'>Explore the latest job openings and apply for the best opportunities available today!</p>
-        </div> 
+        </div>
         <div className='w-full font-nhdr flex flex-row items-center justify-between bg-background rounded-[10px] border border-white p-[20px] gap-[15px]'>
           <input
             type="search"
@@ -475,9 +475,10 @@ const FindJobContainer = () => {
             <select
               name="location"
               id="location"
+              defaultValue="Karachi"
               className=' py-[10px] rounded-[8px]  text-14 text-gray-dark bg-white focus:outline-none'
             >
-              <option value="Select Locatio" >Select Location</option>
+              <option value="Select Locatio" disabled >Select Location</option>
               <option value="Karachi">Karachi</option>
               <option value="Lahore">Lahore</option>
               <option value="Islamabad">Islamabad</option>
@@ -486,9 +487,10 @@ const FindJobContainer = () => {
             <select
               name="jobType"
               id="jobType"
+              defaultValue="UI / UX Designer"
               className=' py-[10px] rounded-[8px]  text-14 text-gray-dark bg-white focus:outline-none'
             >
-              <option value="Job Type">Job Type</option>
+              <option value="Job Type" disabled>Job Type</option>
               <option value="Frontend Developer">Frontend Developer</option>
               <option value="Backend Developer">Backend Developer</option>
               <option value="UI / UX Designer">UI / UX Designer</option>
