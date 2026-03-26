@@ -1,5 +1,7 @@
+"use client"
 import Link from "next/link"
 import Image from "next/image"
+import { usePathname } from "next/navigation"
 const Navbar = () => {
     const links = [
         {
@@ -34,6 +36,7 @@ const Navbar = () => {
             text: 'Notifications'
         },
     ]
+    const pathName = usePathname();
     return (
         <nav className='min-h-[70px] bg-background pt-[15px] pb-[16px] fixed w-full z-10 '>
             <div className='custom-container flex items-center justify-between'>
@@ -43,8 +46,8 @@ const Navbar = () => {
                     </Link>
                     <ul className="flex gap-[25px]">
                         {
-                            links?.map((item) => <li key={item?.id} className="text-16 text-secondary font-nhdr">
-                                <Link href={item?.href}>
+                            links?.map((item) => <li key={item?.id} className={`${pathName === item?.href ? 'text-primary font-nhdm' : 'text-secondary font-nhdr'} text-16`} >
+                                <Link href={item?.href} >
                                     {item?.text}
                                 </Link>
                             </li>)
