@@ -475,23 +475,23 @@ const FindJobContainer = () => {
             <select
               name="location"
               id="location"
-              className=' py-[10px] rounded-[8px]  text-14 text-gray-dark bg-white'
+              className=' py-[10px] rounded-[8px]  text-14 text-gray-dark bg-white focus:outline-none'
             >
-              <option value="volvo">Select Location</option>
-              <option value="saab">Karachi</option>
-              <option value="opel">Lahore</option>
-              <option value="audi">Islamabad</option>
+              <option value="Select Locatio" >Select Location</option>
+              <option value="Karachi">Karachi</option>
+              <option value="Lahore">Lahore</option>
+              <option value="Islamabad">Islamabad</option>
             </select>
             <span className='w-[1px] h-[36px] bg-gray-mid'></span>
             <select
               name="jobType"
               id="jobType"
-              className=' py-[10px] rounded-[8px]  text-14 text-gray-dark bg-white'
+              className=' py-[10px] rounded-[8px]  text-14 text-gray-dark bg-white focus:outline-none'
             >
-              <option value="volvo">Job Type</option>
-              <option value="saab">Frontend Developer</option>
-              <option value="opel">Backend Developer</option>
-              <option value="audi">UI / UX Designer</option>
+              <option value="Job Type">Job Type</option>
+              <option value="Frontend Developer">Frontend Developer</option>
+              <option value="Backend Developer">Backend Developer</option>
+              <option value="UI / UX Designer">UI / UX Designer</option>
             </select>
             <button className='bg-primary min-w-[140px] flex flex-row gap-[10px] justify-center cursor-pointer items-center w-auto px-[20px] py-[10px] rounded-[8px] text-14 text-white hover:opacity-90 transition-opacity'>
               <span className='w-[15.5px] h-[15.5px] relative shrink-0'>
