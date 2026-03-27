@@ -62,7 +62,7 @@ const Navbar = () => {
                                 <Image src="/assets/icons/search-icon-gr.svg" alt='search' fill />
                             </div>
                         </div>
-                        <input placeholder="Search" type="search" className=" py-[10px] px-[40px] w-full   placeholder:text-secondary placeholder:text-14 text-14  font-nhdr" />
+                        <input placeholder="Search" type="search" className=" py-[10px] pl-[40px] w-full focus:outline-none placeholder:text-secondary placeholder:text-14 text-14  font-nhdr" />
                     </div>
                     <button className="bg-primary font-nhdr py-[10px] px-[20px] shrink-0 rounded-[8px] text-white cursor-pointer">Resume Builder</button>
                     <div className="w-[38px] h-[38px] relative overflow-hidden rounded-[50%] shrink-0">

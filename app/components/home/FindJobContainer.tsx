@@ -468,7 +468,7 @@ const FindJobContainer = () => {
           <input
             type="search"
             placeholder='Job Title, Company, or Keywords'
-            className='text-gray-dark text-14 placeholder:text-14 placeholder:text-gray-dark flex-1 min-w-[200px]'
+            className='text-gray-dark text-14 focus:outline-none placeholder:text-14 placeholder:text-gray-dark flex-1 min-w-[355px]'
           />
           <div className='flex flex-row gap-[28px] items-center  w-full justify-end'>
             <span className='w-[1px] h-[36px] bg-gray-mid'></span>
