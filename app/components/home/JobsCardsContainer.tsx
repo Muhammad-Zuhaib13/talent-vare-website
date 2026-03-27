@@ -2,9 +2,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const JobsCardsContainer = (props:any) => {
-    const {data, marginBottom='18px', isShowBorder=true } = props;
+    const {data, marginBottom='mb-[18px]',marginTop='mt-0', isShowBorder=true } = props;
     return (
-        <div className={`flex flex-col gap-[15px] w-full pb-[18px] ${isShowBorder && 'border-b border-b-gray-mid'}  mb-[${marginBottom}]`}>
+        <div className={`flex flex-col gap-[15px] w-full pb-[18px] ${isShowBorder && 'border-b border-b-gray-mid'} ${marginTop} ${marginBottom} `}>
             <div className='flex flex-row gap-[15px] font-nhdr'>
                 <h2 className='text-18 text-dark '>{data?.title}</h2>
                 <Link className='text-18 text-primary underline underline-offset-3' href={data?.cta?.href}>{data?.cta?.text}</Link>

@@ -516,8 +516,8 @@ const FindJobContainer = () => {
         </div>
       </div>
       <JobsCardsContainer data={featuredJobs} />
-      <JobsCardsContainer data={recommendedJobs} marginBottom='25px' />
-      <JobsCardsContainer data={latestJobs} isShowBorder={false} />
+      <JobsCardsContainer data={recommendedJobs} marginBottom='mb-[25px]' />
+      <JobsCardsContainer data={latestJobs} isShowBorder={false} marginTop='mt-[25px]' />
     </div>
   )
 }

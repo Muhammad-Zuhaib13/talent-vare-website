@@ -1,4 +1,4 @@
-'use client' // Add this if using Next.js App Router
+'use client' 
 
 import Image from "next/image"
 import { useState, useEffect } from "react"
@@ -13,7 +13,7 @@ const Loader = () => {
             setShowLoader(false)
         }, 3000)
 
-        // Cleanup timeout on component unmount
+        // omponent unmount
         return () => clearTimeout(timer)
     }, [])
 
